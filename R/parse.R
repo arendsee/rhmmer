@@ -18,57 +18,58 @@ read_domtblout <- function(file){
 
 
 .parse_hmmer_output <- function(file, type){
-  column_names <- if(type == 'tblout'){
-    c(
-      'domain_name',
-      'domain_accession',
-      'query_name',
-      'query_accession',
-      'sequence_evalue',
-      'sequence_score',
-      'sequence_bias',
-      'best_domain_evalue',
-      'best_domain_score',
-      'best_domain_bis',
-      'domain_number_exp',
-      'domain_number_reg',
-      'domain_number_clu',
-      'domain_number_ov',
-      'domain_number_env',
-      'domain_number_dom',
-      'domain_number_rep',
-      'domain_number_inc',
-      'description'
+
+  col_types <- if(type == 'tblout'){
+    readr::cols(
+      domain_name         = col_character(),
+      domain_accession    = col_character(),
+      query_name          = col_character(),
+      query_accession     = col_character(),
+      sequence_evalue     = col_double(),
+      sequence_score      = col_double(),
+      sequence_bias       = col_double(),
+      best_domain_evalue  = col_double(),
+      best_domain_score   = col_double(),
+      best_domain_bis     = col_double(),
+      domain_number_exp   = col_double(),
+      domain_number_reg   = col_integer(),
+      domain_number_clu   = col_integer(),
+      domain_number_ov    = col_integer(),
+      domain_number_env   = col_integer(),
+      domain_number_dom   = col_integer(),
+      domain_number_rep   = col_integer(),
+      domain_number_inc   = col_character(),
+      description         = col_character()
     )
-  } else if(type == 'domtblout') {
-    c(
-      'domain_name',
-      'domain_accession',
-      'domain_len',
-      'query_name',
-      'query_accession',
-      'qlen',
-      'sequence_evalue',
-      'sequence_score',
-      'sequence_bias',
-      'domain_N',
-      'domain_of',
-      'domain_cevalue',
-      'domain_ievalue',
-      'domain_score',
-      'domain_bias',
-      'hmm_from',
-      'hmm_to',
-      'ali_from',
-      'ali_to',
-      'env_from',
-      'env_to',
-      'acc',
-      'description'
+  } else if(type == 'domtblout'){
+    readr::cols(
+      domain_name         = col_character(),
+      domain_accession    = col_character(),
+      domain_len          = col_integer(),
+      query_name          = col_character(),
+      query_accession     = col_character(),
+      qlen                = col_integer(),
+      sequence_evalue     = col_double(),
+      sequence_score      = col_double(),
+      sequence_bias       = col_double(),
+      domain_N            = col_integer(),
+      domain_of           = col_integer(),
+      domain_cevalue      = col_double(),
+      domain_ievalue      = col_double(),
+      domain_score        = col_double(),
+      domain_bias         = col_double(),
+      hmm_from            = col_integer(),
+      hmm_to              = col_integer(),
+      ali_from            = col_integer(),
+      ali_to              = col_integer(),
+      env_from            = col_integer(),
+      env_to              = col_integer(),
+      acc                 = col_double(),
+      description         = col_character()
     )
   }
 
-  N <- length(column_names)
+  N <- length(col_types$cols)
 
   readr::read_lines(file) %>%
     Filter(f=function(x) grepl('^[^#]', x)) %>%
@@ -79,5 +80,6 @@ read_domtblout <- function(file){
     ) %>%
     paste0(collapse="\n") %>%
     readr::read_tsv(col_names=c('X', 'description')) %>%
-    tidyr::separate(.data$X, head(column_names, -1), sep=' +')
+    tidyr::separate(.data$X, head(names(col_types$cols), -1), sep=' +') %>%
+    readr::type_convert(col_types=col_types)
 }
