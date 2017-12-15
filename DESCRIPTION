@@ -1,6 +1,6 @@
 Package: rhmmer
 Title: Utilities Parsing HMMER Results 
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: person("Zebulun", "Arendsee", email = "zbwrnz@gmail.com", role = c("aut", "cre"))
 Description:
     HMMER is a profile HMM tool used primarily for sequence analysis in
@@ -17,6 +17,6 @@ Imports:
 Suggests:
     testthat,
     covr
-License: GPL-3 + file LICENSE
 LazyData: true
 RoxygenNote: 6.0.1
+License: GPL-3
