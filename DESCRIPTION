@@ -16,5 +16,6 @@ Imports:
     rlang
 License: GPL-3 + file LICENSE
 LazyData: true
-Suggests: testthat
+Suggests: testthat,
+    covr
 RoxygenNote: 6.0.1
