@@ -8,11 +8,13 @@ Description:
     into tidy data frames.
 Depends:
     R (>= 3.4.3)
-Imports::
+Imports:
     magrittr,
     readr,
     dplyr,
+    tidyr,
     rlang
 License: GPL-3 + file LICENSE
 LazyData: true
 Suggests: testthat
+RoxygenNote: 6.0.1

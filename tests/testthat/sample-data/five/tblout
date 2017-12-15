@@ -1,0 +1,50 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Rer1                 PF03248.12 AT2G18240.1          -            2.3e-61  206.4  10.4   7.1e-61  204.8  11.2   1.3   2   0   0   2   2   2   1 Rer1 family
+DUF4220              PF13968.5  AT5G45530.1          -            4.6e-78  263.0   0.0   1.3e-77  261.5   0.0   1.7   1   1   0   1   1   1   1 Domain of unknown function (DUF4220)
+DUF594               PF04578.12 AT5G45530.1          -            4.7e-24   83.6   1.5   1.1e-23   82.4   1.5   1.7   1   0   0   1   1   1   1 Protein of unknown function, DUF594
+DEAD                 PF00270.28 AT1G27880.2          -            6.7e-20   71.5   0.1   1.9e-19   70.0   0.1   1.8   1   0   0   1   1   1   1 DEAD/DEAH box helicase
+Helicase_C           PF00271.30 AT1G27880.2          -            3.2e-18   66.0   0.0     3e-17   62.9   0.0   2.5   2   0   0   2   2   2   1 Helicase conserved C-terminal domain
+ResIII               PF04851.14 AT1G27880.2          -             0.0012   18.8   0.1    0.0084   16.0   0.0   2.4   2   1   0   2   2   2   1 Type III restriction enzyme, res subunit
+TIR                  PF01582.19 AT1G56520.1          -            7.3e-46  156.1   0.0   1.2e-45  155.3   0.0   1.4   1   0   0   1   1   1   1 TIR domain
+NB-ARC               PF00931.21 AT1G56520.1          -            1.9e-17   63.1   0.0   3.5e-17   62.3   0.0   1.4   1   0   0   1   1   1   1 NB-ARC domain
+LRR_3                PF07725.11 AT1G56520.1          -              1e-07   31.4   1.1     1e-07   31.4   1.1   2.7   2   0   0   2   2   2   1 Leucine Rich Repeat
+LRR_8                PF13855.5  AT1G56520.1          -            2.3e-07   30.4   7.0    0.0048   16.5   0.0   5.5   3   2   3   6   6   6   4 Leucine rich repeat
+LRR_4                PF12799.6  AT1G56520.1          -            2.7e-07   30.6  17.6    0.0047   17.2   0.2   6.1   6   1   1   7   7   5   3 Leucine Rich repeats (2 copies)
+TIR_2                PF13676.5  AT1G56520.1          -            2.6e-05   24.4   0.1   9.3e-05   22.6   0.0   1.9   2   0   0   2   2   2   1 TIR domain
+AAA_16               PF13191.5  AT1G56520.1          -             0.0002   21.7   0.3   0.00077   19.8   0.3   2.0   1   1   0   1   1   1   1 AAA ATPase domain
+AAA_18               PF13238.5  AT1G56520.1          -              0.001   19.5   0.0    0.0024   18.3   0.0   1.7   1   0   0   1   1   1   1 AAA domain
+AAA_22               PF13401.5  AT1G56520.1          -             0.0048   17.1   1.0     0.024   14.8   1.0   2.1   1   1   0   1   1   1   1 AAA domain
+ATPase_2             PF01637.17 AT1G56520.1          -              0.015   15.1   0.0     0.046   13.5   0.0   1.8   1   1   0   1   1   1   0 ATPase domain predominantly from Archaea
+PhoH                 PF02562.15 AT1G56520.1          -              0.028   13.8   1.1       3.5    6.9   0.2   2.3   1   1   1   2   2   2   0 PhoH-like protein
+NACHT                PF05729.11 AT1G56520.1          -              0.029   14.2   0.0     0.057   13.2   0.0   1.5   1   0   0   1   1   1   0 NACHT domain
+AAA_23               PF13476.5  AT1G56520.1          -              0.039   14.4   0.0      0.34   11.3   0.0   2.3   2   0   0   2   2   2   0 AAA domain
+ABC_tran             PF00005.26 AT1G56520.1          -              0.044   14.2   0.0     0.095   13.1   0.0   1.5   1   0   0   1   1   1   0 ABC transporter
+NTPase_1             PF03266.14 AT1G56520.1          -              0.062   13.1   0.0      0.16   11.8   0.0   1.7   1   1   0   1   1   1   0 NTPase
+AAA_29               PF13555.5  AT1G56520.1          -              0.079   12.6   0.1       1.3    8.7   0.1   2.3   2   0   0   2   2   2   0 P-loop containing region of AAA domain
+LRR_1                PF00560.32 AT1G56520.1          -               0.15   12.6  14.8        24    5.9   0.0   7.8   8   1   0   8   8   8   0 Leucine Rich Repeat
+DAO                  PF01266.23 AT3G10370.1          -            3.2e-53  181.4   0.1   8.6e-53  180.1   0.0   1.6   2   0   0   2   2   2   1 FAD dependent oxidoreductase
+DAO_C                PF16901.4  AT3G10370.1          -              9e-39  132.1   0.3   1.6e-38  131.3   0.3   1.4   1   0   0   1   1   1   1 C-terminal domain of alpha-glycerophosphate oxidase
+FAD_binding_2        PF00890.23 AT3G10370.1          -            6.3e-07   28.7   1.9    0.0023   17.0   1.2   2.3   2   0   0   2   2   2   2 FAD binding domain
+FAD_oxidored         PF12831.6  AT3G10370.1          -             0.0001   21.7   1.1   0.00043   19.7   0.3   2.2   2   0   0   2   2   2   1 FAD dependent oxidoreductase
+Pyr_redox_2          PF07992.13 AT3G10370.1          -              0.014   14.6   0.0     0.031   13.4   0.0   1.5   1   0   0   1   1   1   0 Pyridine nucleotide-disulphide oxidoreductase
+FAD_binding_3        PF01494.18 AT3G10370.1          -              0.015   14.5   0.2      0.39    9.8   0.5   2.1   2   0   0   2   2   2   0 FAD binding domain
+GIDA                 PF01134.21 AT3G10370.1          -              0.036   13.0   0.2      0.23   10.4   0.1   2.0   2   0   0   2   2   2   0 Glucose inhibited division protein A
+Pyr_redox            PF00070.26 AT3G10370.1          -              0.063   13.8   0.7      0.28   11.7   0.7   2.1   1   0   0   1   1   1   0 Pyridine nucleotide-disulphide oxidoreductase
+HI0933_like          PF03486.13 AT3G10370.1          -              0.075   11.6   0.2      0.15   10.6   0.2   1.5   1   0   0   1   1   1   0 HI0933-like protein
+AAA_30               PF13604.5  AT3G10370.1          -              0.077   12.6   0.6      0.17   11.5   0.0   1.9   2   0   0   2   2   2   0 AAA domain
+Pyr_redox_3          PF13738.5  AT3G10370.1          -                0.1   11.7   0.0      0.18   10.9   0.0   1.3   1   0   0   1   1   1   0 Pyridine nucleotide-disulphide oxidoreductase
+DUF4179              PF13786.5  AT3G10370.1          -               0.18   12.2   0.9      0.71   10.3   0.0   2.2   2   0   0   2   2   2   0 Domain of unknown function (DUF4179)
+3HCDH_N              PF02737.17 AT3G10370.1          -               0.31   10.8   2.0      0.36   10.6   0.2   2.0   2   0   0   2   2   2   0 3-hydroxyacyl-CoA dehydrogenase, NAD binding domain
+NAD_binding_8        PF13450.5  AT3G10370.1          -                1.4    9.1   5.0      0.32   11.2   0.6   2.3   3   0   0   3   3   2   0 NAD(P)-binding Rossmann-like domain
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      five.faa
+# Target file:     /home/z/db/Pfam-A.hmm
+# Option settings: hmmscan --tblout x.tblout --domtblout x.domtblout --pfamtblout x.pfamtblout --noali /home/z/db/Pfam-A.hmm five.faa 
+# Current dir:     /home/z/src/git/rhmmer/tests/testthat/sample-data
+# Date:            Fri Dec 15 02:09:00 2017
+# [ok]

@@ -1,0 +1,172 @@
+# Sequence scores
+# ---------------
+#
+# name                  bits   E-value   n   exp  bias    description
+# ------------------- ------ --------- --- ----- -----    ---------------------
+Rer1                   206.4   2.3e-61   2   1.3  10.4    Rer1 family
+
+# Domain scores
+# -------------
+#
+#  name                 bits   E-value   hit  bias env-st env-en ali-st ali-en hmm-st hmm-en     description
+# ------------------- ------ --------- ----- ----- ------ ------ ------ ------ ------ ------      ---------------------
+Rer1                   204.8   7.1e-61     1  11.2     21    183     24    181      4    168     Rer1 family
+Rer1                    -3.6   7.2e+03     2   0.0    184    217    187    199     55     67     Rer1 family
+# Sequence scores
+# ---------------
+#
+# name                  bits   E-value   n   exp  bias    description
+# ------------------- ------ --------- --- ----- -----    ---------------------
+DUF4220                263.0   4.6e-78   1   1.7   0.0    Domain of unknown function (DUF4220)
+DUF594                  83.6   4.7e-24   1   1.7   1.5    Protein of unknown function, DUF594
+
+# Domain scores
+# -------------
+#
+#  name                 bits   E-value   hit  bias env-st env-en ali-st ali-en hmm-st hmm-en     description
+# ------------------- ------ --------- ----- ----- ------ ------ ------ ------ ------ ------      ---------------------
+DUF4220                261.5   1.3e-77     1   0.0     51    427     51    396      1    344     Domain of unknown function (DUF4220)
+DUF594                  82.4   1.1e-23     1   1.5    724    778    726    778      3     55     Protein of unknown function, DUF594
+# Sequence scores
+# ---------------
+#
+# name                  bits   E-value   n   exp  bias    description
+# ------------------- ------ --------- --- ----- -----    ---------------------
+DEAD                    71.5   6.7e-20   1   1.8   0.1    DEAD/DEAH box helicase
+Helicase_C              66.0   3.2e-18   2   2.5   0.0    Helicase conserved C-terminal domain
+ResIII                  18.8    0.0012   2   2.4   0.1    Type III restriction enzyme, res subunit
+
+# Domain scores
+# -------------
+#
+#  name                 bits   E-value   hit  bias env-st env-en ali-st ali-en hmm-st hmm-en     description
+# ------------------- ------ --------- ----- ----- ------ ------ ------ ------ ------ ------      ---------------------
+DEAD                    70.0   1.9e-19     1   0.1    271    438    272    433      2    171     DEAD/DEAH box helicase
+Helicase_C              62.9     3e-17     2   0.0    470    581    485    580     15    110     Helicase conserved C-terminal domain
+ResIII                  16.0    0.0084     2   0.0    268    432    270    430      4    169     Type III restriction enzyme, res subunit
+Helicase_C              -0.7   1.7e+03     1   0.0    307    367    314    364     21     72     Helicase conserved C-terminal domain
+ResIII                  -3.7   9.4e+03     1   0.1    188    256    214    232    102    123     Type III restriction enzyme, res subunit
+# Sequence scores
+# ---------------
+#
+# name                  bits   E-value   n   exp  bias    description
+# ------------------- ------ --------- --- ----- -----    ---------------------
+TIR                    156.1   7.3e-46   1   1.4   0.0    TIR domain
+NB-ARC                  63.1   1.9e-17   1   1.4   0.0    NB-ARC domain
+LRR_3                   31.4     1e-07   2   2.7   1.1    Leucine Rich Repeat
+LRR_8                   30.4   2.3e-07   6   5.5   7.0    Leucine rich repeat
+LRR_4                   30.6   2.7e-07   7   6.1  17.6    Leucine Rich repeats (2 copies)
+TIR_2                   24.4   2.6e-05   2   1.9   0.1    TIR domain
+AAA_16                  21.7    0.0002   1   2.0   0.3    AAA ATPase domain
+AAA_18                  19.5     0.001   1   1.7   0.0    AAA domain
+AAA_22                  17.1    0.0048   1   2.1   1.0    AAA domain
+ATPase_2                15.1     0.015   1   1.8   0.0    ATPase domain predominantly from Archaea
+PhoH                    13.8     0.028   2   2.3   1.1    PhoH-like protein
+NACHT                   14.2     0.029   1   1.5   0.0    NACHT domain
+AAA_23                  14.4     0.039   2   2.3   0.0    AAA domain
+ABC_tran                14.2     0.044   1   1.5   0.0    ABC transporter
+NTPase_1                13.1     0.062   1   1.7   0.0    NTPase
+AAA_29                  12.6     0.079   2   2.3   0.1    P-loop containing region of AAA domain
+LRR_1                   12.6      0.15   8   7.8  14.8    Leucine Rich Repeat
+
+# Domain scores
+# -------------
+#
+#  name                 bits   E-value   hit  bias env-st env-en ali-st ali-en hmm-st hmm-en     description
+# ------------------- ------ --------- ----- ----- ------ ------ ------ ------ ------ ------      ---------------------
+TIR                    155.3   1.2e-45     1   0.0     12    189     13    179      2    164     TIR domain
+NB-ARC                  62.3   3.5e-17     1   0.0    189    456    192    440      4    262     NB-ARC domain
+LRR_3                   31.4     1e-07     1   1.1    603    622    603    622      1     20     Leucine Rich Repeat
+TIR_2                   22.6   9.3e-05     1   0.0     15    120     15    101      1     85     TIR domain
+AAA_16                  19.8   0.00077     1   0.3    186    319    187    243      3     63     AAA ATPase domain
+AAA_18                  18.3    0.0024     1   0.0    210    332    210    274      1     69     AAA domain
+LRR_4                   17.2    0.0047     5   0.2    762    805    763    804      3     42     Leucine Rich repeats (2 copies)
+LRR_8                   16.5    0.0048     5   0.0    716    773    717    772      2     60     Leucine rich repeat
+AAA_22                  14.8     0.024     1   1.0    204    324    209    312      7    113     AAA domain
+ATPase_2                13.5     0.046     1   0.0    190    311    193    265      8     82     ATPase domain predominantly from Archaea
+NACHT                   13.2     0.057     1   0.0    208    336    210    304      3     95     NACHT domain
+ABC_tran                13.1     0.095     1   0.0    200    276    208    232     12     36     ABC transporter
+NTPase_1                11.8      0.16     1   0.0    209    303    210    293      2     87     NTPase
+AAA_23                  11.3      0.34     1   0.0    192    284    208    238     20     50     AAA domain
+AAA_29                   8.7       1.3     1   0.1    194    232    201    227     18     42     P-loop containing region of AAA domain
+LRR_8                    8.8       1.3     2   0.3    602    661    603    657      2     58     Leucine rich repeat
+LRR_4                    9.1       1.6     4   0.0    716    760    716    756      1     39     Leucine Rich repeats (2 copies)
+LRR_8                    8.2         2     6   0.1    760    795    763    794     27     59     Leucine rich repeat
+PhoH                     6.9       3.5     1   0.2    192    251    206    227     18     39     PhoH-like protein
+LRR_8                    6.6       6.2     3   0.2    625    683    626    682      2     59     Leucine rich repeat
+LRR_4                    7.2       6.5     2   0.1    625    671    626    658      2     33     Leucine Rich repeats (2 copies)
+LRR_4                    6.6        10     3   0.3    649    715    684    711     12     38     Leucine Rich repeats (2 copies)
+PhoH                     5.3        11     2   0.0    240    341    257    332     87    161     PhoH-like protein
+LRR_1                    5.9        24     6   0.0    762    783    763    773      2     12     Leucine Rich Repeat
+LRR_8                    2.6   1.1e+02     4   0.1    648    706    649    703      2     57     Leucine rich repeat
+LRR_1                    3.3   1.6e+02     7   0.3    785    818    785    800      1     16     Leucine Rich Repeat
+LRR_1                    3.1   1.9e+02     4   0.0    696    738    696    728      1     13     Leucine Rich Repeat
+AAA_29                   0.9   3.5e+02     2   0.0    582    608    583    606      3     25     P-loop containing region of AAA domain
+LRR_1                    1.4     7e+02     3   0.0    649    671    649    669      1     21     Leucine Rich Repeat
+LRR_8                   -0.6   1.1e+03     1   0.0    535    561    544    560     15     31     Leucine rich repeat
+LRR_3                   -0.6   1.3e+03     2   0.5    626    641    626    640      1     14     Leucine Rich Repeat
+AAA_23                  -0.5   1.4e+03     2   0.0    811    864    818    843    118    143     AAA domain
+LRR_1                    0.1   1.9e+03     2   0.1    626    647    626    637      1     12     Leucine Rich Repeat
+LRR_1                   -1.0   4.3e+03     8   0.0    866    888    874    886      8     21     Leucine Rich Repeat
+TIR_2                   -2.5     6e+03     2   0.1    256    296    257    295     16     55     TIR domain
+LRR_1                   -1.5   6.2e+03     5   0.0    741    760    742    752      3     13     Leucine Rich Repeat
+LRR_4                   -2.6   8.3e+03     1   0.0    535    566    550    563     19     33     Leucine Rich repeats (2 copies)
+LRR_1                   -1.9   8.5e+03     1   0.0    603    621    603    615      1     13     Leucine Rich Repeat
+# Sequence scores
+# ---------------
+#
+# name                  bits   E-value   n   exp  bias    description
+# ------------------- ------ --------- --- ----- -----    ---------------------
+DAO                    181.4   3.2e-53   2   1.6   0.1    FAD dependent oxidoreductase
+DAO_C                  132.1     9e-39   1   1.4   0.3    C-terminal domain of alpha-glycerophosphate oxidase
+FAD_binding_2           28.7   6.3e-07   2   2.3   1.9    FAD binding domain
+FAD_oxidored            21.7    0.0001   2   2.2   1.1    FAD dependent oxidoreductase
+Pyr_redox_2             14.6     0.014   1   1.5   0.0    Pyridine nucleotide-disulphide oxidoreductase
+FAD_binding_3           14.5     0.015   2   2.1   0.2    FAD binding domain
+GIDA                    13.0     0.036   2   2.0   0.2    Glucose inhibited division protein A
+Pyr_redox               13.8     0.063   1   2.1   0.7    Pyridine nucleotide-disulphide oxidoreductase
+HI0933_like             11.6     0.075   1   1.5   0.2    HI0933-like protein
+AAA_30                  12.6     0.077   2   1.9   0.6    AAA domain
+Pyr_redox_3             11.7       0.1   1   1.3   0.0    Pyridine nucleotide-disulphide oxidoreductase
+DUF4179                 12.2      0.18   2   2.2   0.9    Domain of unknown function (DUF4179)
+3HCDH_N                 10.8      0.31   2   2.0   2.0    3-hydroxyacyl-CoA dehydrogenase, NAD binding domain
+NAD_binding_8            9.1       1.4   3   2.3   5.0    NAD(P)-binding Rossmann-like domain
+
+# Domain scores
+# -------------
+#
+#  name                 bits   E-value   hit  bias env-st env-en ali-st ali-en hmm-st hmm-en     description
+# ------------------- ------ --------- ----- ----- ------ ------ ------ ------ ------ ------      ---------------------
+DAO                    180.1   8.6e-53     1   0.0     75    443     75    442      1    351     FAD dependent oxidoreductase
+DAO_C                  131.3   1.6e-38     1   0.3    465    601    465    600      1    125     C-terminal domain of alpha-glycerophosphate oxidase
+FAD_oxidored            19.7   0.00043     1   0.3     75    142     75    114      1     40     FAD dependent oxidoreductase
+FAD_binding_2           17.0    0.0023     1   1.2     75    124     75    115      1     41     FAD binding domain
+Pyr_redox_2             13.4     0.031     1   0.0     59    151     75    108      2     36     Pyridine nucleotide-disulphide oxidoreductase
+HI0933_like             10.6      0.15     1   0.2     74    109     75    105      2     32     HI0933-like protein
+AAA_30                  11.5      0.17     2   0.0    455    559    484    533     32     81     AAA domain
+Pyr_redox_3             10.9      0.18     1   0.0     58    151     75    128    166    220     Pyridine nucleotide-disulphide oxidoreductase
+GIDA                    10.4      0.23     1   0.1     75    134     75    103      1     29     Glucose inhibited division protein A
+Pyr_redox               11.7      0.28     1   0.7     75    111     76    106      2     32     Pyridine nucleotide-disulphide oxidoreductase
+FAD_binding_2           10.1      0.29     2   0.0    226    320    247    307    154    213     FAD binding domain
+NAD_binding_8           11.2      0.32     1   0.6     78    145     78    122      1     42     NAD(P)-binding Rossmann-like domain
+3HCDH_N                 10.6      0.36     1   0.2     75    131     76    106      2     32     3-hydroxyacyl-CoA dehydrogenase, NAD binding domain
+FAD_binding_3            9.8      0.39     1   0.5     73    131     75    124      3     51     FAD binding domain
+DUF4179                 10.3      0.71     1   0.0      2     63      5     40      5     37     Domain of unknown function (DUF4179)
+FAD_binding_3            2.2        83     2   0.0    228    401    240    306    117    179     FAD binding domain
+GIDA                     0.0   3.3e+02     2   0.0    249    311    257    305    110    159     Glucose inhibited division protein A
+FAD_oxidored            -0.1   4.1e+02     2   0.0    214    296    247    294    100    143     FAD dependent oxidoreductase
+DAO                     -1.8   1.7e+03     2   0.1    538    626    554    590     68    106     FAD dependent oxidoreductase
+DUF4179                 -0.6   1.8e+03     2   0.1    235    300    243    290     10     57     Domain of unknown function (DUF4179)
+3HCDH_N                 -1.8   2.2e+03     2   0.1    560    623    578    613     30     65     3-hydroxyacyl-CoA dehydrogenase, NAD binding domain
+AAA_30                  -2.7   3.7e+03     1   0.1     58     98     60     94      5     39     AAA domain
+NAD_binding_8           -2.4   5.5e+03     2   0.0    420    454    435    444     31     40     NAD(P)-binding Rossmann-like domain
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      five.faa
+# Target file:     /home/z/db/Pfam-A.hmm
+# Option settings: hmmscan --tblout x.tblout --domtblout x.domtblout --pfamtblout x.pfamtblout --noali /home/z/db/Pfam-A.hmm five.faa 
+# Current dir:     /home/z/src/git/rhmmer/tests/testthat/sample-data
+# Date:            Fri Dec 15 02:09:00 2017
+# [ok]

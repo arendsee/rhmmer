@@ -7,5 +7,4 @@ NULL
 #'
 #' @docType package
 #' @name rhmmer 
-#' @examples
 NULL

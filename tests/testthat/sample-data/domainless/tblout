@@ -1,0 +1,13 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      orphan.faa
+# Target file:     /home/z/db/Pfam-A.hmm
+# Option settings: hmmscan --tblout x.tblout --domtblout x.domtblout --pfamtblout x.pfamtblout --noali /home/z/db/Pfam-A.hmm orphan.faa 
+# Current dir:     /home/z/src/git/rhmmer/tests/testthat/sample-data
+# Date:            Fri Dec 15 02:06:38 2017
+# [ok]

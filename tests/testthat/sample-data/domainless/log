@@ -1,0 +1,42 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             orphan.faa
+# target HMM database:             /home/z/db/Pfam-A.hmm
+# per-seq hits tabular output:     x.tblout
+# per-dom hits tabular output:     x.domtblout
+# pfam-style tabular hit output:   x.pfamtblout
+# show alignments in output:       no
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AT2G38544.1  [L=47]
+Description: pacid=19638109 transcript=AT2G38544.1 locus=AT2G38544 ID=AT2G38544.1.TAIR10 annot-version=TAIR10
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model:
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (47 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       182  (0.0108904); expected 334.2 (0.02)
+Passed bias filter:                      152  (0.00909526); expected 334.2 (0.02)
+Passed Vit filter:                         5  (0.000299186); expected 16.7 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.22u 0.13s 00:00:00.35 Elapsed: 00:00:00.25
+# Mc/sec: 546.52
+//
+[ok]

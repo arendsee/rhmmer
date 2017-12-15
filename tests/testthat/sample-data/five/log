@@ -1,0 +1,386 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             five.faa
+# target HMM database:             /home/z/db/Pfam-A.hmm
+# per-seq hits tabular output:     x.tblout
+# per-dom hits tabular output:     x.domtblout
+# pfam-style tabular hit output:   x.pfamtblout
+# show alignments in output:       no
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AT2G18240.1  [L=221]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.3e-61  206.4  10.4    7.1e-61  204.8  11.2    1.3  2  Rer1      Rer1 family
+
+
+Domain annotation for each model:
+>> Rer1  Rer1 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  204.8  11.2   4.3e-65   7.1e-61       4     168 ..      24     181 ..      21     183 .. 0.96
+   2 ?   -3.6   0.0      0.43   7.2e+03      55      67 ..     187     199 ..     184     217 .. 0.69
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (221 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       613  (0.0366802); expected 334.2 (0.02)
+Passed bias filter:                      260  (0.0155577); expected 334.2 (0.02)
+Passed Vit filter:                        14  (0.000837721); expected 16.7 (0.001)
+Passed Fwd filter:                         1  (5.98372e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.27u 0.17s 00:00:00.44 Elapsed: 00:00:00.26
+# Mc/sec: 2470.98
+//
+Query:       AT5G45530.1  [L=798]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.6e-78  263.0   0.0    1.3e-77  261.5   0.0    1.7  1  DUF4220   Domain of unknown function (DUF4220)
+    4.7e-24   83.6   1.5    1.1e-23   82.4   1.5    1.7  1  DUF594    Protein of unknown function, DUF594
+
+
+Domain annotation for each model:
+>> DUF4220  Domain of unknown function (DUF4220)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  261.5   0.0   1.5e-81   1.3e-77       1     344 [.      51     396 ..      51     427 .. 0.78
+
+>> DUF594  Protein of unknown function, DUF594
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.4   1.5   1.3e-27   1.1e-23       3      55 .]     726     778 ..     724     778 .. 0.96
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (798 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       574  (0.0343466); expected 334.2 (0.02)
+Passed bias filter:                      439  (0.0262685); expected 334.2 (0.02)
+Passed Vit filter:                        36  (0.00215414); expected 16.7 (0.001)
+Passed Fwd filter:                         2  (0.000119674); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.41u 0.13s 00:00:00.54 Elapsed: 00:00:00.22
+# Mc/sec: 10544.60
+//
+Query:       AT1G27880.2  [L=890]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.7e-20   71.5   0.1    1.9e-19   70.0   0.1    1.8  1  DEAD        DEAD/DEAH box helicase
+    3.2e-18   66.0   0.0      3e-17   62.9   0.0    2.5  2  Helicase_C  Helicase conserved C-terminal domain
+     0.0012   18.8   0.1     0.0084   16.0   0.0    2.4  2  ResIII      Type III restriction enzyme, res subunit
+
+
+Domain annotation for each model:
+>> DEAD  DEAD/DEAH box helicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.0   0.1   3.4e-23   1.9e-19       2     171 ..     272     433 ..     271     438 .. 0.83
+
+>> Helicase_C  Helicase conserved C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0      0.31   1.7e+03      21      72 ..     314     364 ..     307     367 .. 0.74
+   2 !   62.9   0.0   5.4e-21     3e-17      15     110 ..     485     580 ..     470     581 .. 0.91
+
+>> ResIII  Type III restriction enzyme, res subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.1       1.7   9.4e+03     102     123 ..     214     232 ..     188     256 .. 0.54
+   2 !   16.0   0.0   1.5e-06    0.0084       4     169 ..     270     430 ..     268     432 .. 0.74
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (890 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       650  (0.0388942); expected 334.2 (0.02)
+Passed bias filter:                      380  (0.0227382); expected 334.2 (0.02)
+Passed Vit filter:                        26  (0.00155577); expected 16.7 (0.001)
+Passed Fwd filter:                         4  (0.000239349); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.45u 0.11s 00:00:00.56 Elapsed: 00:00:00.22
+# Mc/sec: 11760.27
+//
+Query:       AT1G56520.1  [L=897]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    7.3e-46  156.1   0.0    1.2e-45  155.3   0.0    1.4  1  TIR       TIR domain
+    1.9e-17   63.1   0.0    3.5e-17   62.3   0.0    1.4  1  NB-ARC    NB-ARC domain
+      1e-07   31.4   1.1      1e-07   31.4   1.1    2.7  2  LRR_3     Leucine Rich Repeat
+    2.3e-07   30.4   7.0     0.0048   16.5   0.0    5.5  6  LRR_8     Leucine rich repeat
+    2.7e-07   30.6  17.6     0.0047   17.2   0.2    6.1  5  LRR_4     Leucine Rich repeats (2 copies)
+    2.6e-05   24.4   0.1    9.3e-05   22.6   0.0    1.9  2  TIR_2     TIR domain
+     0.0002   21.7   0.3    0.00077   19.8   0.3    2.0  1  AAA_16    AAA ATPase domain
+      0.001   19.5   0.0     0.0024   18.3   0.0    1.7  1  AAA_18    AAA domain
+     0.0048   17.1   1.0      0.024   14.8   1.0    2.1  1  AAA_22    AAA domain
+  ------ inclusion threshold ------
+      0.015   15.1   0.0      0.046   13.5   0.0    1.8  1  ATPase_2  ATPase domain predominantly from Archaea
+      0.028   13.8   1.1        3.5    6.9   0.2    2.3  2  PhoH      PhoH-like protein
+      0.029   14.2   0.0      0.057   13.2   0.0    1.5  1  NACHT     NACHT domain
+      0.039   14.4   0.0       0.34   11.3   0.0    2.3  2  AAA_23    AAA domain
+      0.044   14.2   0.0      0.095   13.1   0.0    1.5  1  ABC_tran  ABC transporter
+      0.062   13.1   0.0       0.16   11.8   0.0    1.7  1  NTPase_1  NTPase
+      0.079   12.6   0.1        1.3    8.7   0.1    2.3  2  AAA_29    P-loop containing region of AAA domain
+       0.15   12.6  14.8         24    5.9   0.0    7.8  8  LRR_1     Leucine Rich Repeat
+
+
+Domain annotation for each model:
+>> TIR  TIR domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  155.3   0.0   1.3e-48   1.2e-45       2     164 ..      13     179 ..      12     189 .. 0.95
+
+>> NB-ARC  NB-ARC domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.3   0.0   3.6e-20   3.5e-17       4     262 ..     192     440 ..     189     456 .. 0.78
+
+>> LRR_3  Leucine Rich Repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.4   1.1     1e-10     1e-07       1      20 []     603     622 ..     603     622 .. 0.98
+   2 ?   -0.6   0.5       1.3   1.3e+03       1      14 [.     626     640 ..     626     641 .. 0.79
+
+>> LRR_8  Leucine rich repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0       1.1   1.1e+03      15      31 ..     544     560 ..     535     561 .. 0.88
+   2 !    8.8   0.3    0.0013       1.3       2      58 ..     603     657 ..     602     661 .. 0.90
+   3 !    6.6   0.2    0.0064       6.2       2      59 ..     626     682 ..     625     683 .. 0.88
+   4 ?    2.6   0.1      0.11   1.1e+02       2      57 ..     649     703 ..     648     706 .. 0.66
+   5 !   16.5   0.0   4.9e-06    0.0048       2      60 ..     717     772 ..     716     773 .. 0.87
+   6 !    8.2   0.1     0.002         2      27      59 ..     763     794 ..     760     795 .. 0.70
+
+>> LRR_4  Leucine Rich repeats (2 copies)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0       8.4   8.3e+03      19      33 ..     550     563 ..     535     566 .. 0.71
+   2 !    7.2   0.1    0.0066       6.5       2      33 ..     626     658 ..     625     671 .. 0.81
+   3 ?    6.6   0.3      0.01        10      12      38 ..     684     711 ..     649     715 .. 0.56
+   4 !    9.1   0.0    0.0017       1.6       1      39 [.     716     756 ..     716     760 .. 0.88
+   5 !   17.2   0.2   4.8e-06    0.0047       3      42 ..     763     804 ..     762     805 .. 0.90
+
+>> TIR_2  TIR domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.0   9.5e-08   9.3e-05       1      85 [.      15     101 ..      15     120 .. 0.79
+   2 ?   -2.5   0.1       6.1     6e+03      16      55 ..     257     295 ..     256     296 .. 0.80
+
+>> AAA_16  AAA ATPase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.3   7.8e-07   0.00077       3      63 ..     187     243 ..     186     319 .. 0.74
+
+>> AAA_18  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   0.0   2.4e-06    0.0024       1      69 [.     210     274 ..     210     332 .. 0.69
+
+>> AAA_22  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   1.0   2.4e-05     0.024       7     113 ..     209     312 ..     204     324 .. 0.64
+
+>> ATPase_2  ATPase domain predominantly from Archaea
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.0   4.7e-05     0.046       8      82 ..     193     265 ..     190     311 .. 0.64
+
+>> PhoH  PhoH-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.2    0.0036       3.5      18      39 ..     206     227 ..     192     251 .. 0.82
+   2 ?    5.3   0.0     0.011        11      87     161 ..     257     332 ..     240     341 .. 0.85
+
+>> NACHT  NACHT domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   5.8e-05     0.057       3      95 ..     210     304 ..     208     336 .. 0.81
+
+>> AAA_23  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   0.00035      0.34      20      50 ..     208     238 ..     192     284 .. 0.80
+   2 ?   -0.5   0.0       1.4   1.4e+03     118     143 ..     818     843 ..     811     864 .. 0.84
+
+>> ABC_tran  ABC transporter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   9.6e-05     0.095      12      36 ..     208     232 ..     200     276 .. 0.89
+
+>> NTPase_1  NTPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   0.00016      0.16       2      87 ..     210     293 ..     209     303 .. 0.79
+
+>> AAA_29  P-loop containing region of AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   0.1    0.0013       1.3      18      42 ..     201     227 ..     194     232 .. 0.80
+   2 ?    0.9   0.0      0.36   3.5e+02       3      25 ..     583     606 ..     582     608 .. 0.86
+
+>> LRR_1  Leucine Rich Repeat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0       8.6   8.5e+03       1      13 [.     603     615 ..     603     621 .. 0.83
+   2 ?    0.1   0.1       1.9   1.9e+03       1      12 [.     626     637 ..     626     647 .. 0.70
+   3 ?    1.4   0.0      0.71     7e+02       1      21 [.     649     669 ..     649     671 .. 0.73
+   4 ?    3.1   0.0      0.19   1.9e+02       1      13 [.     696     728 ..     696     738 .. 0.61
+   5 ?   -1.5   0.0       6.4   6.2e+03       3      13 ..     742     752 ..     741     760 .. 0.71
+   6 ?    5.9   0.0     0.024        24       2      12 ..     763     773 ..     762     783 .. 0.82
+   7 ?    3.3   0.3      0.17   1.6e+02       1      16 [.     785     800 ..     785     818 .. 0.75
+   8 ?   -1.0   0.0       4.4   4.3e+03       8      21 ..     874     886 ..     866     888 .. 0.77
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (897 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       446  (0.0266874); expected 334.2 (0.02)
+Passed bias filter:                      384  (0.0229775); expected 334.2 (0.02)
+Passed Vit filter:                        71  (0.00424844); expected 16.7 (0.001)
+Passed Fwd filter:                        17  (0.00101723); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):              17  [number of targets reported over threshold]
+# CPU time: 0.47u 0.14s 00:00:00.61 Elapsed: 00:00:00.22
+# Mc/sec: 11852.76
+//
+Query:       AT3G10370.1  [L=629]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.2e-53  181.4   0.1    8.6e-53  180.1   0.0    1.6  2  DAO            FAD dependent oxidoreductase
+      9e-39  132.1   0.3    1.6e-38  131.3   0.3    1.4  1  DAO_C          C-terminal domain of alpha-glycerophosphate ox
+    6.3e-07   28.7   1.9     0.0023   17.0   1.2    2.3  2  FAD_binding_2  FAD binding domain
+     0.0001   21.7   1.1    0.00043   19.7   0.3    2.2  2  FAD_oxidored   FAD dependent oxidoreductase
+  ------ inclusion threshold ------
+      0.014   14.6   0.0      0.031   13.4   0.0    1.5  1  Pyr_redox_2    Pyridine nucleotide-disulphide oxidoreductase
+      0.015   14.5   0.2       0.39    9.8   0.5    2.1  2  FAD_binding_3  FAD binding domain
+      0.036   13.0   0.2       0.23   10.4   0.1    2.0  2  GIDA           Glucose inhibited division protein A
+      0.063   13.8   0.7       0.28   11.7   0.7    2.1  1  Pyr_redox      Pyridine nucleotide-disulphide oxidoreductase
+      0.075   11.6   0.2       0.15   10.6   0.2    1.5  1  HI0933_like    HI0933-like protein
+      0.077   12.6   0.6       0.17   11.5   0.0    1.9  2  AAA_30         AAA domain
+        0.1   11.7   0.0       0.18   10.9   0.0    1.3  1  Pyr_redox_3    Pyridine nucleotide-disulphide oxidoreductase
+       0.18   12.2   0.9       0.71   10.3   0.0    2.2  2  DUF4179        Domain of unknown function (DUF4179)
+       0.31   10.8   2.0       0.36   10.6   0.2    2.0  2  3HCDH_N        3-hydroxyacyl-CoA dehydrogenase, NAD binding d
+        1.4    9.1   5.0       0.32   11.2   0.6    2.3  2  NAD_binding_8  NAD(P)-binding Rossmann-like domain
+
+
+Domain annotation for each model:
+>> DAO  FAD dependent oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  180.1   0.0   7.2e-56   8.6e-53       1     351 [.      75     442 ..      75     443 .. 0.80
+   2 ?   -1.8   0.1       1.4   1.7e+03      68     106 ..     554     590 ..     538     626 .. 0.61
+
+>> DAO_C  C-terminal domain of alpha-glycerophosphate oxidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  131.3   0.3   1.3e-41   1.6e-38       1     125 [.     465     600 ..     465     601 .. 0.98
+
+>> FAD_binding_2  FAD binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   1.2   1.9e-06    0.0023       1      41 [.      75     115 ..      75     124 .. 0.94
+   2 !   10.1   0.0   0.00024      0.29     154     213 ..     247     307 ..     226     320 .. 0.82
+
+>> FAD_oxidored  FAD dependent oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.3   3.6e-07   0.00043       1      40 [.      75     114 ..      75     142 .. 0.93
+   2 ?   -0.1   0.0      0.34   4.1e+02     100     143 ..     247     294 ..     214     296 .. 0.85
+
+>> Pyr_redox_2  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.0   2.6e-05     0.031       2      36 ..      75     108 ..      59     151 .. 0.78
+
+>> FAD_binding_3  FAD binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.5   0.00033      0.39       3      51 ..      75     124 ..      73     131 .. 0.84
+   2 ?    2.2   0.0     0.069        83     117     179 ..     240     306 ..     228     401 .. 0.67
+
+>> GIDA  Glucose inhibited division protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1   0.00019      0.23       1      29 [.      75     103 ..      75     134 .. 0.87
+   2 ?    0.0   0.0      0.27   3.3e+02     110     159 ..     257     305 ..     249     311 .. 0.58
+
+>> Pyr_redox  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.7   0.00023      0.28       2      32 ..      76     106 ..      75     111 .. 0.96
+
+>> HI0933_like  HI0933-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.2   0.00012      0.15       2      32 ..      75     105 ..      74     109 .. 0.94
+
+>> AAA_30  AAA domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.1       3.1   3.7e+03       5      39 ..      60      94 ..      58      98 .. 0.57
+   2 ?   11.5   0.0   0.00014      0.17      32      81 ..     484     533 ..     455     559 .. 0.88
+
+>> Pyr_redox_3  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   0.00015      0.18     166     220 ..      75     128 ..      58     151 .. 0.73
+
+>> DUF4179  Domain of unknown function (DUF4179)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   0.00059      0.71       5      37 ..       5      40 ..       2      63 .. 0.82
+   2 ?   -0.6   0.1       1.5   1.8e+03      10      57 ..     243     290 ..     235     300 .. 0.50
+
+>> 3HCDH_N  3-hydroxyacyl-CoA dehydrogenase, NAD binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.2    0.0003      0.36       2      32 ..      76     106 ..      75     131 .. 0.85
+   2 ?   -1.8   0.1       1.9   2.2e+03      30      65 ..     578     613 ..     560     623 .. 0.45
+
+>> NAD_binding_8  NAD(P)-binding Rossmann-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.6   0.00027      0.32       1      42 [.      78     122 ..      78     145 .. 0.83
+   2 ?   -2.4   0.0       4.6   5.5e+03      31      40 ..     435     444 ..     420     454 .. 0.73
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (629 residues searched)
+Target model(s):                       16712  (2907032 nodes)
+Passed MSV filter:                       741  (0.0443394); expected 334.2 (0.02)
+Passed bias filter:                      596  (0.035663); expected 334.2 (0.02)
+Passed Vit filter:                        63  (0.00376975); expected 16.7 (0.001)
+Passed Fwd filter:                        14  (0.000837721); expected 0.2 (1e-05)
+Initial search space (Z):              16712  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.45u 0.08s 00:00:00.53 Elapsed: 00:00:00.22
+# Mc/sec: 8311.47
+//
+[ok]
