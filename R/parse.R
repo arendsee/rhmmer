@@ -72,14 +72,13 @@ read_domtblout <- function(file){
   N <- length(col_types$cols)
 
   readr::read_lines(file) %>%
-    Filter(f=function(x) grepl('^[^#]', x)) %>%
     sub(
       pattern = sprintf("(%s) *(.*)", paste0(rep('\\S+', N-1), collapse=" +")),
       replacement = '\\1\t\\2',
       perl = TRUE
     ) %>%
     paste0(collapse="\n") %>%
-    readr::read_tsv(col_names=c('X', 'description')) %>%
+    readr::read_tsv(col_names=c('X', 'description'), comment='#', na='-') %>%
     tidyr::separate(.data$X, head(names(col_types$cols), -1), sep=' +') %>%
     readr::type_convert(col_types=col_types)
 }
