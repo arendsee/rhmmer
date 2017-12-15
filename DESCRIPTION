@@ -7,15 +7,16 @@ Description:
     bioinformatics. 'rhmmer' provides utilities for parsing the HMMER output
     into tidy data frames.
 Depends:
-    R (>= 3.4.3)
+    R (>= 3.4.2)
 Imports:
     magrittr,
     readr,
     dplyr,
     tidyr,
     rlang
+Suggests:
+    testthat,
+    covr
 License: GPL-3 + file LICENSE
 LazyData: true
-Suggests: testthat,
-    covr
 RoxygenNote: 6.0.1
