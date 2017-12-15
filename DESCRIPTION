@@ -20,7 +20,6 @@ Imports:
 Suggests:
     testthat,
     covr
-VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 6.0.1
 License: GPL-3
