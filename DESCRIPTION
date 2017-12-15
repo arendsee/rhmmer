@@ -1,11 +1,14 @@
+Type:: Package
 Package: rhmmer
-Title: Utilities Parsing HMMER Results 
 Version: 0.1.0
-Authors@R: person("Zebulun", "Arendsee", email = "zbwrnz@gmail.com", role = c("aut", "cre"))
+Title: Utilities Parsing HMMER Results 
 Description:
     HMMER is a profile HMM tool used primarily for sequence analysis in
     bioinformatics. 'rhmmer' provides utilities for parsing the HMMER output
     into tidy data frames.
+Authors@R: person("Zebulun", "Arendsee", email="zbwrnz@gmail.com", role=c("aut","cre"))
+URL: https://github.com/arendsee/rhmmer
+BugReports: https://github.com/arendsee/rhmmer/issues
 Depends:
     R (>= 3.4.2)
 Imports:
@@ -17,6 +20,7 @@ Imports:
 Suggests:
     testthat,
     covr
+VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 6.0.1
 License: GPL-3
