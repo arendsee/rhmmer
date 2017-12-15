@@ -2,7 +2,7 @@
 % Please edit documentation in R/parse.R
 \name{read_domtblout}
 \alias{read_domtblout}
-\title{Read a file created through the '-domtblout' option}
+\title{Read a file created through the '----domtblout' option}
 \usage{
 read_domtblout(file)
 }
@@ -13,5 +13,5 @@ read_domtblout(file)
 data.frame
 }
 \description{
-Read a file created through the '-domtblout' option
+Read a file created through the '----domtblout' option
 }

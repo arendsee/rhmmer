@@ -6,5 +6,11 @@
 \alias{rhmmer-package}
 \title{rhmmer: utilities for HMMER}
 \description{
-rhmmer: utilities for HMMER
+Currently rhmmer exports exactly two functions:
+}
+\details{
+\describe{
+   \item{\code{read_tblout}}{Read a file made by HMMER '----tblout'}
+   \item{\code{read_domtblout}}{Read a file made by HMMER '----domtblout'}
+}
 }

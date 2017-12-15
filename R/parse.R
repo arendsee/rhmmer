@@ -1,4 +1,4 @@
-#' Read a file created through the '-tblout' option
+#' Read a file created through the '----tblout' option
 #'
 #' @param file Filename
 #' @return data.frame
@@ -7,7 +7,7 @@ read_tblout <- function(file){
   .parse_hmmer_output(file, 'tblout')
 }
 
-#' Read a file created through the '-domtblout' option
+#' Read a file created through the '----domtblout' option
 #'
 #' @param file Filename
 #' @return data.frame

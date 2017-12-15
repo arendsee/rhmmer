@@ -2,7 +2,7 @@
 % Please edit documentation in R/parse.R
 \name{read_tblout}
 \alias{read_tblout}
-\title{Read a file created through the '-tblout' option}
+\title{Read a file created through the '----tblout' option}
 \usage{
 read_tblout(file)
 }
@@ -13,5 +13,5 @@ read_tblout(file)
 data.frame
 }
 \description{
-Read a file created through the '-tblout' option
+Read a file created through the '----tblout' option
 }
