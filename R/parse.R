@@ -3,6 +3,9 @@
 #' @param file Filename
 #' @return data.frame
 #' @export
+#' @examples
+#' file <- system.file('extdata', 'example.tblout.txt', package='rhmmer')
+#' read_tblout(file)
 read_tblout <- function(file){
   .parse_hmmer_output(file, 'tblout')
 }
@@ -12,6 +15,9 @@ read_tblout <- function(file){
 #' @param file Filename
 #' @return data.frame
 #' @export
+#' @examples
+#' file <- system.file('extdata', 'example.domtblout.txt', package='rhmmer')
+#' read_domtblout(file)
 read_domtblout <- function(file){
   .parse_hmmer_output(file, 'domtblout')
 }

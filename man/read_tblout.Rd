@@ -15,3 +15,7 @@ data.frame
 \description{
 Read a file created through the '----tblout' option
 }
+\examples{
+file <- system.file('extdata', 'example.tblout.txt', package='rhmmer')
+read_tblout(file)
+}

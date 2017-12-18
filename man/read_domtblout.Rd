@@ -15,3 +15,7 @@ data.frame
 \description{
 Read a file created through the '----domtblout' option
 }
+\examples{
+file <- system.file('extdata', 'example.domtblout.txt', package='rhmmer')
+read_domtblout(file)
+}
