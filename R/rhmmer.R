@@ -4,7 +4,7 @@
 utils::globalVariables(c("%>%", "."))
 NULL
 
-#' rhmmer: utilities for HMMER
+#' rhmmer: utilities for 'HMMER'
 #'
 #' Currently rhmmer exports exactly two functions:
 #'
