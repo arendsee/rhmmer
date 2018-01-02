@@ -24,15 +24,72 @@ install_github('arendsee/rhmmer')
 `read_tblout`. These read the `hmmscan` outputs specified by the `--domtblout`
 and `--tblout` arguments, respectively.
 
+The `domtblout` files have the format:
+
+```
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Rer1                 PF03248.12   171 AT2G18240.1          -            221   2.3e-61  206.4  10.4   1   2   4.3e-65   7.1e-61  204.8  11.2     4   168    24   181    21   183 0.96 Rer1 family
+Rer1                 PF03248.12   171 AT2G18240.1          -            221   2.3e-61  206.4  10.4   2   2      0.43   7.2e+03   -3.6   0.0    55    67   187   199   184   217 0.69 Rer1 family
+DUF4220              PF13968.5    352 AT5G45530.1          -            798   4.6e-78  263.0   0.0   1   1   1.5e-81   1.3e-77  261.5   0.0     1   344    51   396    51   427 0.78 Domain of unknown function (DUF4220)
+DUF594               PF04578.12    55 AT5G45530.1          -            798   4.7e-24   83.6   1.5   1   1   1.3e-27   1.1e-23   82.4   1.5     3    55   726   778   724   778 0.96 Protein of unknown function, DUF594
+DEAD                 PF00270.28   176 AT1G27880.2          -            890   6.7e-20   71.5   0.1   1   1   3.4e-23   1.9e-19   70.0   0.1     2   171   272   433   271   438 0.83 DEAD/DEAH box helicase
+...
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      five.faa
+# Target file:     /home/z/db/Pfam-A.hmm
+# Option settings: hmmscan --tblout x.tblout --domtblout x.domtblout --pfamtblout x.pfamtblout --noali /home/z/db/Pfam-A.hmm five.faa 
+# Current dir:     /home/z/src/git/rhmmer/tests/testthat/sample-data
+# Date:            Fri Dec 15 02:09:00 2017
+# [ok]
+```
+
+This is tricky to parse. It is mostly space delimited, but spaces appear freely
+in the `description of target` column. The column names, as given, cannot be
+directly used since they 1) contain illegal characters and 2) are not unique
+unless information from two rows is considered (e.g. `ali_from` versus
+`env_from`). The metadata at the end of the file I do not currently extract,
+though I will likely add handling for this in the future.
+
 ```R
 domtblout <- system.file('extdata', 'example.domtblout.txt', package='rhmmer')
 read_domtblout(domtblout)
+```
+
+The `tblout` output is fairly similar and presents the same parsing difficulties:
+
+```
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Rer1                 PF03248.12 AT2G18240.1          -            2.3e-61  206.4  10.4   7.1e-61  204.8  11.2   1.3   2   0   0   2   2   2   1 Rer1 family
+DUF4220              PF13968.5  AT5G45530.1          -            4.6e-78  263.0   0.0   1.3e-77  261.5   0.0   1.7   1   1   0   1   1   1   1 Domain of unknown function (DUF4220)
+DUF594               PF04578.12 AT5G45530.1          -            4.7e-24   83.6   1.5   1.1e-23   82.4   1.5   1.7   1   0   0   1   1   1   1 Protein of unknown function, DUF594
+DEAD                 PF00270.28 AT1G27880.2          -            6.7e-20   71.5   0.1   1.9e-19   70.0   0.1   1.8   1   0   0   1   1   1   1 DEAD/DEAH box helicase
+Helicase_C           PF00271.30 AT1G27880.2          -            3.2e-18   66.0   0.0     3e-17   62.9   0.0   2.5   2   0   0   2   2   2   1 Helicase conserved C-terminal domain
+ResIII               PF04851.14 AT1G27880.2          -             0.0012   18.8   0.1    0.0084   16.0   0.0   2.4   2   1   0   2   2   2   1 Type III restriction enzyme, res subunit
+...
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      five.faa
+# Target file:     /home/z/db/Pfam-A.hmm
+# Option settings: hmmscan --tblout x.tblout --domtblout x.domtblout --pfamtblout x.pfamtblout --noali /home/z/db/Pfam-A.hmm five.faa 
+# Current dir:     /home/z/src/git/rhmmer/tests/testthat/sample-data
+# Date:            Fri Dec 15 02:09:00 2017
+# [ok]
 ```
 
 ```R
 tblout <- system.file('extdata', 'example.tblout.txt', package='rhmmer')
 read_tblout(tblout)
 ```
+
 
 ## What `rhmmer` does and doesn't
 
@@ -42,9 +99,7 @@ What `rhmmer` currently does
 
 What `rhmmer` may do in the future
 
- * provide simple wrappers for calling some of the HMMER functions (although,
-   if you are doing anything high-throughput, it might be easier to use
-   a shellscript on a cluster)
+ * provide simple wrappers for calling some of the HMMER functions
 
  * parse metadata from the comments in HMMER output files
 
@@ -60,6 +115,10 @@ What `rhmmer` will never do
 
  * interface with the HMMER web server (use Bio3D)
 
- * install HMMER for you (that is your problem)
-
  * duplicate the whole HMMER api (just use the CLI tool)
+
+
+## TODO
+
+ [ ] Rewrite the parser in C++
+ [ ] Parse out the file metadata
