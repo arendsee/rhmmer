@@ -13,7 +13,14 @@ specifically designed for working with the standalone HMMer tool.
 
 ## Installation
 
-To install the github version
+`rhmmer` is available on CRAN
+
+
+```r
+install.packages('rhmmer')
+```
+
+Alternatively, you may install the github development version
 
 
 ```r
@@ -61,28 +68,19 @@ though I will likely add handling for this in the future.
 
 ```r
 library(rhmmer)
+```
+
+```
+## Error in library(rhmmer): there is no package called 'rhmmer'
+```
+
+```r
 domtblout <- system.file('extdata', 'example.domtblout.txt', package='rhmmer')
 read_domtblout(domtblout)
 ```
 
 ```
-## # A tibble: 70 x 23
-##    domai… doma… doma… quer… quer…  qlen sequence… sequ… seque… doma… doma…
-##  * <chr>  <chr> <int> <chr> <chr> <int>     <dbl> <dbl>  <dbl> <int> <int>
-##  1 Rer1   PF03…   171 AT2G… -       221  2.30e⁻⁶¹ 206   10.4       1     2
-##  2 Rer1   PF03…   171 AT2G… -       221  2.30e⁻⁶¹ 206   10.4       2     2
-##  3 DUF42… PF13…   352 AT5G… -       798  4.60e⁻⁷⁸ 263    0         1     1
-##  4 DUF594 PF04…    55 AT5G… -       798  4.70e⁻²⁴  83.6  1.50      1     1
-##  5 DEAD   PF00…   176 AT1G… -       890  6.70e⁻²⁰  71.5  0.100     1     1
-##  6 Helic… PF00…   111 AT1G… -       890  3.20e⁻¹⁸  66.0  0         1     2
-##  7 Helic… PF00…   111 AT1G… -       890  3.20e⁻¹⁸  66.0  0         2     2
-##  8 ResIII PF04…   171 AT1G… -       890  1.20e⁻ ³  18.8  0.100     1     2
-##  9 ResIII PF04…   171 AT1G… -       890  1.20e⁻ ³  18.8  0.100     2     2
-## 10 TIR    PF01…   176 AT1G… -       897  7.30e⁻⁴⁶ 156    0         1     1
-## # ... with 60 more rows, and 12 more variables: domain_cevalue <dbl>,
-## #   domain_ievalue <dbl>, domain_score <dbl>, domain_bias <dbl>,
-## #   hmm_from <int>, hmm_to <int>, ali_from <int>, ali_to <int>,
-## #   env_from <int>, env_to <int>, acc <dbl>, description <chr>
+## Error in read_domtblout(domtblout): could not find function "read_domtblout"
 ```
 
 The `tblout` output is fairly similar and presents the same parsing difficulties:
@@ -117,24 +115,7 @@ read_tblout(tblout)
 ```
 
 ```
-## # A tibble: 37 x 19
-##    domai… domai… quer… quer… sequence… sequ… seque… best_dom… best… best_…
-##  * <chr>  <chr>  <chr> <chr>     <dbl> <dbl>  <dbl>     <dbl> <dbl>  <dbl>
-##  1 Rer1   PF032… AT2G… -      2.30e⁻⁶¹ 206   10.4    7.10e⁻⁶¹ 205   11.2  
-##  2 DUF42… PF139… AT5G… -      4.60e⁻⁷⁸ 263    0      1.30e⁻⁷⁷ 262    0    
-##  3 DUF594 PF045… AT5G… -      4.70e⁻²⁴  83.6  1.50   1.10e⁻²³  82.4  1.50 
-##  4 DEAD   PF002… AT1G… -      6.70e⁻²⁰  71.5  0.100  1.90e⁻¹⁹  70.0  0.100
-##  5 Helic… PF002… AT1G… -      3.20e⁻¹⁸  66.0  0      3.00e⁻¹⁷  62.9  0    
-##  6 ResIII PF048… AT1G… -      1.20e⁻ ³  18.8  0.100  8.40e⁻ ³  16.0  0    
-##  7 TIR    PF015… AT1G… -      7.30e⁻⁴⁶ 156    0      1.20e⁻⁴⁵ 155    0    
-##  8 NB-ARC PF009… AT1G… -      1.90e⁻¹⁷  63.1  0      3.50e⁻¹⁷  62.3  0    
-##  9 LRR_3  PF077… AT1G… -      1.00e⁻ ⁷  31.4  1.10   1.00e⁻ ⁷  31.4  1.10 
-## 10 LRR_8  PF138… AT1G… -      2.30e⁻ ⁷  30.4  7.00   4.80e⁻ ³  16.5  0    
-## # ... with 27 more rows, and 9 more variables: domain_number_exp <dbl>,
-## #   domain_number_reg <int>, domain_number_clu <int>,
-## #   domain_number_ov <int>, domain_number_env <int>,
-## #   domain_number_dom <int>, domain_number_rep <int>,
-## #   domain_number_inc <chr>, description <chr>
+## Error in read_tblout(tblout): could not find function "read_tblout"
 ```
 
 

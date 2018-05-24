@@ -1,6 +1,8 @@
 [![Travis-CI Build Status](https://travis-ci.org/arendsee/rhmmer.svg?branch=master)](https://travis-ci.org/arendsee/rhmmer)
 [![Coverage Status](https://img.shields.io/codecov/c/github/arendsee/rhmmer/master.svg)](https://codecov.io/github/arendsee/rhmmer?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rhmmer)](https://cran.r-project.org/package=rhmmer)
+[![CRAN downloads](http://cranlogs.r-pkg.org/badges/rhmmer)](http://cran.rstudio.com/web/packages/rhmmer/index.html)
+[![total downloads](http://cranlogs.r-pkg.org/badges/grand-total/rhmmer)](http://cranlogs.r-pkg.org/badges/grand-total/rhmmer)
 
 # rhmmer
 
@@ -11,7 +13,13 @@ specifically designed for working with the standalone HMMer tool.
 
 ## Installation
 
-To install the github version
+`rhmmer` is available on CRAN
+
+```{r, eval=FALSE}
+install.packages('rhmmer')
+```
+
+Alternatively, you may install the github development version
 
 ```{r, eval=FALSE}
 library(devtools)
