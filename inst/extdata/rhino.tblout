@@ -1,0 +1,35 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NADHdh               PF00146.20 YP_002887585.1       -           9.7e-110  366.5  23.1  1.1e-109  366.3  23.1   1.0   1   0   0   1   1   1   1 NADH dehydrogenase
+Proton_antipo_M      PF00361.19 YP_002887586.1       -              5e-42  144.0  40.7     5e-42  144.0  40.7   1.8   1   1   1   2   2   2   1 Proton-conducting membrane transporter
+NADH_dehy_S2_C       PF06444.10 YP_002887586.1       -            4.5e-22   78.2  16.2   4.5e-22   78.2  16.2   6.4   6   2   2   8   8   8   1 NADH dehydrogenase subunit 2 C-terminus
+COX1                 PF00115.19 YP_002887587.1       -           3.8e-144  480.6  65.1  4.8e-144  480.3  65.1   1.1   1   0   0   1   1   1   1 Cytochrome C and Quinol oxidase polypeptide I
+COX2                 PF00116.19 YP_002887588.1       -            2.1e-64  214.7   0.0   3.3e-64  214.0   0.0   1.3   1   0   0   1   1   1   1 Cytochrome C oxidase subunit II, periplasmic domain
+COX2_TM              PF02790.14 YP_002887588.1       -            2.3e-28   98.1   7.4   3.6e-28   97.4   7.4   1.3   1   0   0   1   1   1   1 Cytochrome C oxidase subunit II, transmembrane domain
+MRAP                 PF15183.5  YP_002887588.1       -               0.15   11.9   6.0       2.2    8.2   0.2   2.3   2   0   0   2   2   2   0 Melanocortin-2 receptor accessory protein family
+ATP-synt_8           PF00895.19 YP_002887589.1       -            2.6e-21   75.7  11.8   3.2e-21   75.4  11.8   1.1   1   0   0   1   1   1   1 ATP synthase protein 8
+ATP-synt_A           PF00119.19 YP_002887590.1       -            1.2e-40  139.7  27.6   1.4e-40  139.4  27.6   1.0   1   0   0   1   1   1   1 ATP synthase A chain
+COX3                 PF00510.17 YP_002887591.1       -           1.9e-131  437.5  26.7  2.1e-131  437.3  26.7   1.0   1   0   0   1   1   1   1 Cytochrome c oxidase subunit III
+Oxidored_q4          PF00507.18 YP_002887592.1       -              3e-27   94.6   0.9   3.9e-27   94.2   0.9   1.1   1   0   0   1   1   1   1 NADH-ubiquinone/plastoquinone oxidoreductase, chain 3
+Oxidored_q2          PF00420.23 YP_002887593.1       -            5.7e-17   61.2  13.5   6.5e-17   61.0  13.5   1.1   1   0   0   1   1   1   1 NADH-ubiquinone/plastoquinone oxidoreductase chain 4L
+Proton_antipo_M      PF00361.19 YP_002887594.1       -            1.7e-77  260.4  36.7   1.7e-77  260.4  36.7   1.7   2   0   0   2   2   2   1 Proton-conducting membrane transporter
+Oxidored_q5_N        PF01059.16 YP_002887594.1       -            5.9e-34  116.4  21.2   5.9e-34  116.4  21.2   5.4   2   1   2   5   5   5   1 NADH-ubiquinone oxidoreductase chain 4, amino terminus
+Birna_RdRp           PF04197.11 YP_002887594.1       -               0.32    9.2   0.9      0.45    8.7   0.9   1.1   1   0   0   1   1   1   0 Birnavirus RNA dependent RNA polymerase (VP1)
+Proton_antipo_M      PF00361.19 YP_002887595.1       -            1.6e-76  257.2  24.6   1.6e-76  257.2  24.6   2.9   3   0   0   3   3   3   1 Proton-conducting membrane transporter
+NADH5_C              PF06455.10 YP_002887595.1       -            1.3e-53  181.2  17.6   1.3e-53  181.2  17.6   4.9   4   2   0   4   4   4   1 NADH dehydrogenase subunit 5 C-terminus
+Proton_antipo_N      PF00662.19 YP_002887595.1       -              7e-14   51.5   8.3     7e-14   51.5   8.3   2.9   3   0   0   3   3   3   1 NADH-Ubiquinone oxidoreductase (complex I), chain 5 N-terminus
+Oxidored_q3          PF00499.19 YP_002887596.1       -            6.7e-18   64.7  16.0   1.1e-17   64.1  16.0   1.3   1   0   0   1   1   1   1 NADH-ubiquinone/plastoquinone oxidoreductase chain 6
+Cytochrome_B         PF00033.18 YP_002887597.1       -              4e-86  287.6  18.4     4e-86  287.6  18.4   2.0   3   0   0   3   3   3   1 Cytochrome b/b6/petB
+Cytochrom_B_N_2      PF13631.5  YP_002887597.1       -              3e-40  137.9   9.8     3e-40  137.9   9.8   2.4   3   0   0   3   3   3   1 Cytochrome b(N-terminal)/b6/petB
+Cytochrom_B_C        PF00032.16 YP_002887597.1       -            3.1e-37  126.9   1.6   3.1e-37  126.9   1.6   3.0   2   1   0   2   2   2   1 Cytochrome b(C-terminal)/b6/petD
+#
+# Program:         hmmscan
+# Version:         3.1b1 (May 2013)
+# Pipeline mode:   SCAN
+# Query file:      rhino.faa
+# Target file:     Pfam-A.hmm
+# Option settings: hmmscan --tblout rhino.tblout --domtblout rhino.domtblout Pfam-A.hmm rhino.faa 
+# Current dir:     /home/rnz/Dropbox/data/pfam
+# Date:            Tue Jan  2 15:13:22 2018
+# [ok]

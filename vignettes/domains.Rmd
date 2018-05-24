@@ -1,0 +1,101 @@
+---
+title: "Protein domain identification"
+author: "Zebulun Arendsee"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Protein domain identification}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+One of the main uses of HMMER is identifying protein domains. You can search
+individual proteins easily on the HMMER website (http://hmmer.org/). But for
+higher throughput analysis, a domain database, such as PFAM, needs to be
+downloaded. The PFAM database is freely available from EBI. You can retrieve
+the current PFAM release from here: 
+
+```
+ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+```
+
+This file can then be unzipped and pressed with `hmmpress` (a tool in the HMMER
+suite). Here is a shell script for the process (assuming a UNIX environment):
+
+```{sh, eval=FALSE}
+wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+gunzip Pfam-A.hmm.gz
+hmmpress Pfam-A.hmm
+```
+
+It should only take a few minutes to install and build the database. On
+success, the following files are generated: `Pfam-A.hmm`, `Pfam-A.hmm.h3f`,
+`Pfam-A.hmm.h3i`, `Pfam-A.hmm.h3m`, and `Pfam-A.hmm.h3p`.
+
+In this vignette, we we will explore the domains of the rhino mitochondrial
+proteins. These sequences are included in the package data.
+
+
+```{r}
+prot <- system.file('extdata', 'rhino.faa', package='rhmmer')
+```
+
+Now we can search these proteins against the PFAM database. You could run the
+HMMER program from within R through `system2`, but here I will just give the
+shell command.
+
+
+```{sh, eval=FALSE}
+hmmscan --tblout rhino.tblout --domtblout rhino.domtblout Pfam-A.hmm rhino.faa
+```
+
+This spills a bunch of text to STDOUT and creates two new files:
+`rhino.domtblout` and `rhino.tblout`. In case you are not executing all the
+installation and database building steps, I've included these outputs in the
+package data:
+
+```{r}
+domtblout_file <- system.file('extdata', 'rhino.domtblout', package='rhmmer')
+tblout_file <- system.file('extdata', 'rhino.tblout', package='rhmmer')
+```
+
+Now we get to the part `rhmmer` plays, which is to read these files into a tidy
+format: 
+
+
+```{r}
+library(rhmmer)
+domtblout <- read_domtblout(domtblout_file)
+tblout <- read_tblout(tblout_file)
+```
+
+For a description of all the columns, it is best to go to the [HMMER
+manual](http://eddylab.org/software/hmmer3/3.1b2/Userguide.pdf).
+
+Here are a few quick summaries of the results
+
+```{r, results="asis"}
+library(dplyr)
+library(magrittr)
+library(knitr)
+domtblout %>%
+  filter(domain_ievalue < 1e-6) %>%
+  select(domain_name, domain_accession, description) %>%
+  unique %>%
+  arrange(domain_name) %>%
+  kable(caption="Summary of significant domains")
+```
+
+```{r, results="asis"}
+tblout %>%
+  filter(best_domain_evalue < 0.001) %>%
+  select(query_name, domain_name) %>%
+  kable(caption="Map of query protein to domain")
+```
