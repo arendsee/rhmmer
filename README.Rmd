@@ -3,6 +3,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rhmmer)](https://cran.r-project.org/package=rhmmer)
 [![CRAN downloads](http://cranlogs.r-pkg.org/badges/rhmmer)](http://cran.rstudio.com/web/packages/rhmmer/index.html)
 [![total downloads](http://cranlogs.r-pkg.org/badges/grand-total/rhmmer)](http://cranlogs.r-pkg.org/badges/grand-total/rhmmer)
+[![DOI](https://zenodo.org/badge/114339623.svg)](https://zenodo.org/badge/latestdoi/114339623)
 
 # rhmmer
 
