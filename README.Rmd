@@ -7,10 +7,11 @@
 
 # rhmmer
 
-[HMMER](hmmer.org) is a powerful package for profile HMM analysis. If you want
-to interface with the web server through R, for example to search for domains
-in a small number of proteins, consider using the Bio3D package.`rhmmer` is
-specifically designed for working with the standalone HMMER tool.
+[HMMER](http://hmmer.org) is a powerful package for profile HMM analysis. If
+you want to interface with the web server through R, for example to search for
+domains in a small number of proteins, consider using the Bio3D
+package.`rhmmer` is specifically designed for working with the standalone HMMER
+tool.
 
 ## Installation
 
