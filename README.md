@@ -1,3 +1,4 @@
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 [![Travis-CI Build Status](https://travis-ci.org/arendsee/rhmmer.svg?branch=master)](https://travis-ci.org/arendsee/rhmmer)
 [![Coverage Status](https://img.shields.io/codecov/c/github/arendsee/rhmmer/master.svg)](https://codecov.io/github/arendsee/rhmmer?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rhmmer)](https://cran.r-project.org/package=rhmmer)
