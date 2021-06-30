@@ -84,7 +84,7 @@ read_domtblout <- function(file){
       perl = TRUE
     ) %>%
     paste0(collapse="\n") %>%
-    readr::read_tsv(col_names=c('X', 'description'), comment='#', na='-') %>%
+    readr::read_tsv(col_names=c('X', 'description'), comment='#', na='-', col_types = "cc") %>%
     tidyr::separate(.data$X, head(names(col_types$cols), -1), sep=' +') %>%
     readr::type_convert(col_types=col_types)
 }

@@ -19,7 +19,7 @@ test_that("read_domtblout works", {
 })
 
 test_that("using the wrong reader fails", {
-  expect_warning(read_domtblout(tblout_file))
+  expect_error(read_domtblout(tblout_file))
   expect_warning(read_tblout(domtblout_file))
 })
 
