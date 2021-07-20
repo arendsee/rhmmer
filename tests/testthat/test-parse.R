@@ -5,6 +5,8 @@ domtblout_file='sample-data/five/domtblout'
 
 empty_tblout_file='sample-data/domainless/tblout'
 empty_domtblout_file='sample-data/domainless/domtblout'
+slf_tblout_file_1='sample-data/slf/SLF1_tblout.scan'
+slf_tblout_file_2='sample-data/slf/SLF2_tblout.scan'
 
 test_that("read_tblout works", {
   tblout <- read_tblout(tblout_file)
@@ -19,7 +21,7 @@ test_that("read_domtblout works", {
 })
 
 test_that("using the wrong reader fails", {
-  expect_error(read_domtblout(tblout_file))
+  expect_warning(read_domtblout(tblout_file))
   expect_warning(read_tblout(domtblout_file))
 })
 
@@ -28,4 +30,12 @@ test_that("files with no data do not fail", {
   expect_silent(read_tblout(empty_domtblout_file))
   expect_equal(dim(read_tblout(empty_tblout_file)), c(0,19))
   expect_equal(dim(read_domtblout(empty_domtblout_file)), c(0,23))
+})
+
+test_that("partially quoted descriptions do not fail", {
+  expect_silent(f1 <- read_tblout(slf_tblout_file_1))
+  expect_silent(f2 <- read_tblout(slf_tblout_file_2))
+  expect_equal(dim(f1), c(97,19))
+  expect_equal(dim(f2), c(97,19))
+  expect_equal(f2$description[1], "\"VanR: transcriptional activator regulating VanA, VanH and VanX\" [ARO:3000574]")
 })

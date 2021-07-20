@@ -22,6 +22,6 @@ Suggests:
     knitr,
     rmarkdown
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1
 License: GPL-3
 VignetteBuilder: knitr

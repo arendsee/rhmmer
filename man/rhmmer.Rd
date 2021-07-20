@@ -3,7 +3,6 @@
 \docType{package}
 \name{rhmmer}
 \alias{rhmmer}
-\alias{rhmmer-package}
 \title{rhmmer: utilities for 'HMMER'}
 \description{
 Currently rhmmer exports exactly two functions:

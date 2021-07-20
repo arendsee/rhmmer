@@ -44,8 +44,7 @@ read_domtblout <- function(file){
       domain_number_env   = readr::col_integer(),
       domain_number_dom   = readr::col_integer(),
       domain_number_rep   = readr::col_integer(),
-      domain_number_inc   = readr::col_character(),
-      description         = readr::col_character()
+      domain_number_inc   = readr::col_character()
     )
   } else if(type == 'domtblout'){
     readr::cols(
@@ -70,21 +69,32 @@ read_domtblout <- function(file){
       ali_to              = readr::col_integer(),
       env_from            = readr::col_integer(),
       env_to              = readr::col_integer(),
-      acc                 = readr::col_double(),
-      description         = readr::col_character()
+      acc                 = readr::col_double()
     )
   }
 
   N <- length(col_types$cols)
 
-  readr::read_lines(file) %>%
-    sub(
-      pattern = sprintf("(%s) *(.*)", paste0(rep('\\S+', N-1), collapse=" +")),
-      replacement = '\\1\t\\2',
+  lines <- readr::read_lines(file)
+
+  table <- sub(
+      pattern = sprintf("(%s).*", paste0(rep('\\S+', N), collapse=" +")),
+      replacement = '\\1',
+      x=lines,
       perl = TRUE
     ) %>%
+    gsub(pattern="  *", replacement="\t") %>%
     paste0(collapse="\n") %>%
-    readr::read_tsv(col_names=c('X', 'description'), comment='#', na='-', col_types = "cc") %>%
-    tidyr::separate(.data$X, head(names(col_types$cols), -1), sep=' +') %>%
-    readr::type_convert(col_types=col_types)
+    readr::read_tsv(col_names=names(col_types$cols), comment='#', na='-', col_types = col_types)
+
+  descriptions <- lines[!grepl("^#", lines, perl=TRUE)] %>%
+    sub(
+      pattern = sprintf("%s *(.*)", paste0(rep('\\S+', N), collapse=" +")),
+      replacement = '\\1',
+      perl = TRUE
+    )
+
+  table$description <- descriptions[!grepl(" *#", descriptions, perl=TRUE)]
+
+  table
 }
