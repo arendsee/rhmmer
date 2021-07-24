@@ -1,0 +1,5 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+X                    x          a                    -          1.7e-06   20.5   0.0   1.8e-06   20.4   0.0     1.0 1   0   0   1   1   1   1   "XXXX" x
+Y                    y          a                    -          2.2e-05   16.8   0.0   2.2e-05   16.7   0.0     1.0 1   0   0   1   1   1   1   XXX x

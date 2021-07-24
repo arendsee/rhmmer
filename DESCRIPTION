@@ -13,14 +13,14 @@ Depends:
 Imports:
     magrittr,
     readr,
-    dplyr,
     tidyr,
     rlang
 Suggests:
     testthat,
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    dplyr
 LazyData: true
 RoxygenNote: 7.1.1
 License: GPL-3
