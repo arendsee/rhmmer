@@ -1,5 +1,5 @@
 Package: rhmmer
-Version: 0.1.0
+Version: 0.2.0
 Title: Utilities Parsing 'HMMER' Results 
 Description:
     'HMMER' is a profile hidden Markov model tool used primarily for sequence
