@@ -1,12 +1,12 @@
 context("parse")
 
-tblout_file='sample-data/five/tblout'
-domtblout_file='sample-data/five/domtblout'
+tblout_file=file.path('sample-data', 'five', 'tblout')
+domtblout_file=file.path('sample-data', 'five', 'domtblout')
 
-empty_tblout_file='sample-data/domainless/tblout'
-empty_domtblout_file='sample-data/domainless/domtblout'
-slf_tblout_file_1='sample-data/slf/SLF1_tblout.scan'
-slf_tblout_file_2='sample-data/slf/SLF2_tblout.scan'
+empty_tblout_file=file.path('sample-data', 'domainless', 'tblout')
+empty_domtblout_file=file.path('sample-data', 'domainless', 'domtblout')
+slf_tblout_file_1=file.path('sample-data', 'slf', 'SLF1_tblout.scan')
+slf_tblout_file_2=file.path('sample-data', 'slf', 'SLF2_tblout.scan')
 
 test_that("read_tblout works", {
   tblout <- read_tblout(tblout_file)
