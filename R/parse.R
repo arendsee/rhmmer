@@ -76,7 +76,7 @@ read_domtblout <- function(file){
   N <- length(col_types$cols)
 
   # the line delimiter should always be just "\n", even on Windows
-  lines <- readr::read_lines(file, sep="\n")
+  lines <- readr::read_lines(file)
 
   table <- sub(
       pattern = sprintf("(%s).*", paste0(rep('\\S+', N), collapse=" +")),
