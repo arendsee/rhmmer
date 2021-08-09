@@ -76,7 +76,7 @@ read_domtblout <- function(file){
   N <- length(col_types$cols)
 
   # the line delimiter should always be just "\n", even on Windows
-  lines <- readr::read_lines(file)
+  lines <- readr::read_lines(file, lazy=FALSE, progress=FALSE)
 
   table <- sub(
       pattern = sprintf("(%s).*", paste0(rep('\\S+', N), collapse=" +")),
@@ -86,7 +86,14 @@ read_domtblout <- function(file){
     ) %>%
     gsub(pattern="  *", replacement="\t") %>%
     paste0(collapse="\n") %>%
-    readr::read_tsv(col_names=names(col_types$cols), comment='#', na='-', col_types = col_types)
+    readr::read_tsv(
+      col_names=names(col_types$cols),
+      comment='#',
+      na='-',
+      col_types = col_types,
+      lazy=FALSE,
+      progress=FALSE
+    )
 
   descriptions <- lines[!grepl("^#", lines, perl=TRUE)] %>%
     sub(
