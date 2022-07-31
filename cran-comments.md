@@ -6,7 +6,7 @@ This is a resubmission. In this version I have:
  * Turn off lazy file reading
 
 ## Test environments
- * local manjaro linux 5.10.49-1, R 4.1.0
+ * local manjaro linux 5.10.49-1, R 4.2.0
  * win-builder (release and dev)
 
 ## R CMD check results
