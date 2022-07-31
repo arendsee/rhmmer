@@ -22,6 +22,7 @@ Suggests:
     rmarkdown,
     dplyr
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.0
 License: GPL-3
 VignetteBuilder: knitr
+Encoding: UTF-8
