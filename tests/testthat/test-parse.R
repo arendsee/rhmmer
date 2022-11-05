@@ -39,3 +39,10 @@ test_that("partially quoted descriptions do not fail", {
   expect_equal(dim(f2), c(97,19))
   expect_equal(f2$description[1], "\"VanR: transcriptional activator regulating VanA, VanH and VanX\" [ARO:3000574]")
 })
+
+test_that("hmmprofiles with /f format parse", {
+  file = system.file('extdata', 'example.hmmprofile.hmm', package='rhmmer')
+  df = read_hmmprofile(file)
+  expect_true(nrow(df) == 20)
+  expect_true(ncol(df) == 28)
+})
