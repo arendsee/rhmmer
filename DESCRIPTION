@@ -12,9 +12,7 @@ Depends:
     R (>= 3.4.0)
 Imports:
     magrittr,
-    readr,
-    tidyr,
-    rlang
+    readr (>= 2.1.0)
 Suggests:
     testthat,
     covr,
