@@ -1,5 +1,5 @@
-^\.travis\.yml$
 ^codecov\.yml$
 ^cran-comments.md$
 ^README.md$
 ^README.Rmd$
+^\.github$
