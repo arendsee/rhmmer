@@ -21,6 +21,6 @@ Suggests:
     dplyr
 LazyData: true
 RoxygenNote: 7.2.0
-License: GPL-3
+License: MIT + file LICENSE
 VignetteBuilder: knitr
 Encoding: UTF-8
