@@ -2,6 +2,7 @@
 % Please edit documentation in R/rhmmer.R
 \docType{package}
 \name{rhmmer}
+\alias{rhmmer-package}
 \alias{rhmmer}
 \title{rhmmer: utilities for 'HMMER'}
 \description{
@@ -12,4 +13,16 @@ Currently rhmmer exports exactly two functions:
    \item{\code{read_tblout}}{Read a file made by HMMER '----tblout'}
    \item{\code{read_domtblout}}{Read a file made by HMMER '----domtblout'}
 }
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/arendsee/rhmmer}
+  \item Report bugs at \url{https://github.com/arendsee/rhmmer/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Zebulun Arendsee \email{zbwrnz@gmail.com}
+
 }

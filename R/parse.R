@@ -95,14 +95,14 @@ read_domtblout <- function(file){
       progress=FALSE
     )
 
-  descriptions <- lines[!grepl("^#", lines, perl=TRUE)] %>%
-    sub(
-      pattern = sprintf("%s *(.*)", paste0(rep('\\S+', N), collapse=" +")),
-      replacement = '\\1',
-      perl = TRUE
-    )
-
-  table$description <- descriptions[!grepl(" *#", descriptions, perl=TRUE)]
+  if(type == 'domtblout'){
+    table$description <- lines[!grepl("^#", lines, perl=TRUE)] %>%
+      sub(
+        pattern = sprintf("%s *(.*)", paste0(rep('\\S+', N), collapse=" +")),
+        replacement = '\\1',
+        perl = TRUE
+      )
+  }
 
   table
 }

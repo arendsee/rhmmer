@@ -8,6 +8,8 @@ empty_domtblout_file=file.path('sample-data', 'domainless', 'domtblout')
 slf_tblout_file_1=file.path('sample-data', 'slf', 'SLF1_tblout.scan')
 slf_tblout_file_2=file.path('sample-data', 'slf', 'SLF2_tblout.scan')
 
+domtblout_search_file=file.path('sample-data', 'search', 'phytases_domtblout.txt')
+
 test_that("read_tblout works", {
   tblout <- read_tblout(tblout_file)
   expect_silent(read_tblout(tblout_file))
@@ -18,6 +20,10 @@ test_that("read_domtblout works", {
   domtblout <- read_domtblout(domtblout_file)
   expect_silent(read_domtblout(domtblout_file))
   expect_equal(dim(domtblout), c(70,23))
+})
+
+test_that("read_domtblout works with search data", {
+  expect_silent(read_domtblout(domtblout_search_file))
 })
 
 test_that("using the wrong reader fails", {
